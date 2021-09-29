@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pizzeria</title>
+<link rel="stylesheet" type="text/css" href="pizzeriaestilo.css">
+<link rel="icon" href="pnglogo.png">
+
+</head>
+
+<body>
+
+<div class="box">
+<ul>
+    <li><a href="inicio.html">INICIO</a></li>
+	<li><a href="Vinos.html">ACERCA DE NOSOTROS</a></li>
+	<li><a href="servicios.html">SERVICIOS</a></li>
+	<li><a href="productos.html">PRODUCTOS</a></li>
+    <li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+<img src="Untitled-1.png"/> 
+</div>
+
+<div class="dos" align="center">
+<img id="principal"  src="pzzz.jpg"/>
+</div>
+<div onmouseout="out()" class="tres" align="center">
+<img id="img1" onmouseover="f()"  src="1.jpeg"/>
+<img id="img2" onmouseover="f2()" src="2.jpg"/>
+<img id="img3" onmouseover="f3()" src="3.jpg"/>
+<img id="img4" onmouseover="f4()" src="4.jpg"/>
+</div>
+
+<script>
+	function out(){
+		var image = document.getElementById('principal');
+		image.src = "pzzz.jpg";
+	}
+</script>
+<script>
+	function f(){
+		var image = document.getElementById('principal');
+		var over = document.getElementById('img1');
+		
+		if(over.src.match("1.jpeg"))
+		{
+			image.src = "1.jpeg";
+		}
+		else{
+			image.src = "pzzz.jpg";
+		}
+	}
+</script>
+<script>
+	function f2(){
+		var image = document.getElementById('principal');
+		var over = document.getElementById('img2');
+		
+		if(over.src.match("2.jpg"))
+		{
+			image.src = "2.jpg";
+		}
+		else{
+			image.src = "pzzz.jpg";
+		}
+	}
+</script>
+
+<script>
+	function f3(){
+		var image = document.getElementById('principal');
+		var over = document.getElementById('img3');
+		
+		if(over.src.match("3.jpg"))
+		{
+			image.src = "3.jpg";
+		}
+		else{
+		image.src = "pzzz.jpg";
+		}
+	}
+</script>
+<script>
+	function f4(){
+		var image = document.getElementById('principal');
+		var over = document.getElementById('img4');
+		
+		if(over.src.match("4.jpg"))
+		{
+			image.src = "4.jpg";
+		}
+		else{
+			image.src = "pzzz.jpg";
+		}
+	}
+</script>
+
+
+
+<div class="cuatro">
+
+</div>
+<div class="cinco">
+</div>
+
+</body>
+</html>
