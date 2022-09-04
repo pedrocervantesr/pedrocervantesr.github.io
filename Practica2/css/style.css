@@ -9,3 +9,16 @@ h1{
 table{
     border: 1px solid #000;
 }
+
+th, th{
+    border: 1px solid #000;
+}
+
+h2{
+    font-size: 16px;
+    color: #666;
+}
+
+a{
+    font-size: 12px;
+}
