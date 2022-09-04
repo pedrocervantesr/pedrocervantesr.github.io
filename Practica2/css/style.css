@@ -23,3 +23,8 @@ h1{
     font-size: 20px;
     color: #333;
 }
+
+th{
+    background-color: #666;
+    color: white;
+}
