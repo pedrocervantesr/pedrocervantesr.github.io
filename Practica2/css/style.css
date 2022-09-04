@@ -23,12 +23,22 @@ h1{
     color: #333;
 }
 
-th{
+img{
+    width: 400px;
+    height: 200px;
+}
+
+thead{
     background-color: #666;
     color: white;
 }
 
-img{
-    width: 400px;
-    height: 200px;
+tbody{
+    background-color: #fff;
+    
+}
+
+tfoot{
+    border: 2px solid black;
+    background-color: #ccc;
 }
