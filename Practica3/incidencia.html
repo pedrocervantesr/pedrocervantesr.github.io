@@ -13,11 +13,11 @@
             <label for="">Campo de texto</label><br>
             <input type="text" style="text-transform: uppercase;"><br>
             <label for="">Lista de selección</label><br>
-            <select name="" id=""><br>
-                <option value="value1">Valor 1</option>
-                <option value="value2">Value 2</option>
-                <option value="value3">Value 3</option>
-                <option value="value4">Value 4</option>
+            <select name="" id="" onchange="getval(this)"><br>
+                <option value="">Valor 1</option>
+                <option value="2">Value 2</option>
+                <option value="">Value 3</option>
+                <option value="">Value 4</option>
             </select><br>
             <label for="">Area de texto</label><br>
             <textarea name="" id="" cols="30" rows="10"></textarea><br>
@@ -31,3 +31,10 @@
     </form>
 </body>
 </html>
+<script>
+function getval(sel)
+{
+    alert(sel.value);
+}
+</script>
+
