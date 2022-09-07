@@ -13,31 +13,31 @@
             <label for="">Campo de texto</label><br>
             <input type="text" style="text-transform: uppercase;"><br>
             <label for="">Lista de selección</label><br>
-            <select name="" id="" onchange="getval(this)"><br>
-                <option value="">Opcion 1</option>
+            <select name="" id="opciones" onchange="mostrarAlerta()"><br>
+                <option value="1">Opcion 1</option>
                 <option value="2">Opcion 2</option>
-                <option value="">Opcion 3</option>
-                <option value="">Opcion 4</option>
+                <option value="3">Opcion 3</option>
+                <option value="4">Opcion 4</option>
             </select><br>
             <label for="">Area de texto</label><br>
             <textarea name="" id="" cols="30" rows="10"></textarea><br>
         </fieldset>
 
         <fieldset>
-            <legend>Agrupacion de botones</legend>
+            <legend>Agrupacion de botoness</legend>
             <button type="reset">Resetear</button>
             <button>Enviar</button>
         </fieldset>
     </form>
     <script>
-        function getval(sel)
-        {
-            var x = sel;
-            if(x == 2){
-                alert("Opcion no valida!!!");
-            }
+        function mostrarAlerta(){
+        /* Para obtener el valor */
+        var cod = document.getElementById("opciones").value;
+        if(cod == 2){
+            alert("Opcion no valida")
         }
-    </script>
+        }
+      </script>
 </body>
 </html>
 
